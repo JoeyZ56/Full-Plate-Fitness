@@ -1,0 +1,49 @@
+/* styles.module.scss */
+
+.container {
+  background-color: rgb(96, 37, 37);
+  padding: 40px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 2.5rem;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+  width: 20rem;
+
+  &:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.text {
+  color: #333;
+  font-size: 18px;
+  margin-top: 10px;
+  display: block;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  height: 50px;
+  width: 50px;
+}

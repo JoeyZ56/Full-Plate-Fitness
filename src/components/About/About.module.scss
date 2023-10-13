@@ -1,0 +1,30 @@
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  margin-top: 2rem;
+}
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.about h2 {
+  color: #333;
+}
+
+.about h3 {
+  color: #555;
+}
+
+.about p {
+  line-height: 1.6;
+  color: #666;
+}

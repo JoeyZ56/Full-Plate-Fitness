@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 3rem;
+}
+
+.weightTraining,
+.nutrition {
+  width: 48%;
+
+  background-color: #fff;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.weightTraining,
+.nutrition {
+  margin: 10px;
+}
+
+.weightTraining ul,
+.nutrition ul {
+  list-style: none;
+  padding: 0;
+}
+
+.weightTraining li,
+.nutrition li {
+  font-weight: bold;
+}
+
+.weightTraining p,
+.nutrition p {
+  margin-bottom: 10px;
+}

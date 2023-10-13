@@ -1,0 +1,28 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(
+    51,
+    51,
+    51,
+    0.8
+  ); /* Use an rgba background to make it semi-transparent */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1000; /* Set a higher z-index value */
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    // padding: 5px;
+
+    &:hover {
+      transition: ease-in-out 0.3s;
+      color: #ccc;
+    }
+  }
+}
