@@ -14,6 +14,7 @@ const About = () => {
       >
         <img src="http://lh3.googleusercontent.com/rj_OuzLeGst1kdD-jtcx9wrCQ3LCfeeYvtUR8j7XrdxL5jL7ukJG4EVdyzkUxHAoPmA=w128" />
       </motion.div>
+      <h1 className={styles.aboutTitle}>Experienced Fitness Professional</h1>
       <div className={styles.about}>
         <h2>Hi</h2>
         <h3>

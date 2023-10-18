@@ -9,6 +9,10 @@
 .title {
   font-size: 24px;
   margin-bottom: 2.5rem;
+
+  span {
+    color: #fff;
+  }
 }
 
 .infoContainer {
@@ -24,7 +28,8 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.3s ease;
-  width: 20rem;
+  width: 15rem;
+  height: 5rem;
 
   &:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -41,6 +46,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  p {
+    font-size: small;
+  }
 }
 
 .icons {

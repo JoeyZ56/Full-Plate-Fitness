@@ -2,15 +2,26 @@
 import Link from "next/link";
 import styles from "./Navbar.module.scss";
 import SocialMedia from "../SocialMedia/SocialMedia";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <Link href="#embla">Full Plate Fitness</Link>
-      <Link href="#about">About</Link>
-      <Link href="#skills">Skills</Link>
-      <Link href="#testimonials">Testimonials</Link>
-      <Link href="#contact">Contact</Link>
+      <motion.div whileHover={{ scale: 1.1 }}>
+        <Link href="#embla">Full Plate Fitness</Link>
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }}>
+        <Link href="#about">About</Link>
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }}>
+        <Link href="#skills">Skills</Link>
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }}>
+        <Link href="#reviews">Reviews</Link>
+      </motion.div>
+      <motion.div whileHover={{ scale: 1.1 }}>
+        <Link href="#contact">Contact</Link>
+      </motion.div>
       <SocialMedia />
     </nav>
   );

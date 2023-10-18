@@ -18,7 +18,16 @@
   a {
     text-decoration: none;
     color: #fff;
-    // padding: 5px;
+    padding: 5px;
+
+    // background: -webkit-linear-gradient(
+    //   rgb(168, 42, 42),
+    //   rgb(168, 42, 42),
+    //   #fff
+    // );
+    // -webkit-background-clip: text;
+    // background-clip: text;
+    // -webkit-text-fill-color: transparent;
 
     &:hover {
       transition: ease-in-out 0.3s;

@@ -6,8 +6,17 @@
   align-items: center;
   padding: 3rem;
 }
+.reviewsTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.reviews {
+  margin-top: 2rem;
+  margin-bottom: -1rem;
+  color: #fff;
+}
+
+.info {
   width: 48%;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -25,6 +34,7 @@
     height: 80px;
     width: 80px;
     margin-left: 1rem;
+    margin-bottom: 0.8rem;
   }
 
   h2 {
@@ -33,11 +43,46 @@
 
   p {
     margin-top: 0;
+
+    display: inline;
   }
 }
 
 .name {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Align child elements to the left side */
+  align-items: center;
+}
+
+.right {
+  width: 15px;
+  height: 15px;
+  margin-left: 1rem;
+
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #ccc;
+  }
+}
+.left {
+  width: 15px;
+  height: 15px;
+  margin-right: 1rem;
+
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #ccc;
+  }
 }

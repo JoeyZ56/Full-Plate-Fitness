@@ -10,7 +10,7 @@ const Contact = () => {
       <div>
         <h2 className={styles.title}>
           <span>For personalized fitness guidance tailored to your goals</span>
-          <br /> please feel free to reach out
+          <br /> <span>please feel free to reach out</span>
         </h2>
         <div className={styles.infoContainer}>
           <Link href="mailto:jennifermccurdy@gmail.com" className={styles.text}>
@@ -21,7 +21,7 @@ const Contact = () => {
               className={styles.info}
             >
               <img
-                src="https://i.imgur.com/vumkygf.png"
+                src="https://i.imgur.com/AH73oGY.png "
                 alt="email"
                 className={styles.icons}
               />
@@ -37,12 +37,12 @@ const Contact = () => {
               className={styles.info}
             >
               <img
-                src="https://i.imgur.com/AH73oGY.png"
+                src=" https://i.imgur.com/vumkygf.png"
                 alt="mobile"
                 className={styles.icons}
               />
               {/* //"tel:" */}
-              <>+1 (530) 514-2339</>
+              <p>+1 (530) 514-2339</p>
             </motion.div>
           </Link>
         </div>
