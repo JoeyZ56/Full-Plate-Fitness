@@ -21,13 +21,13 @@ export const EmblaCarousel = () => {
       <div className={styles.embla} ref={emblaRef} id="embla">
         <div className={styles.embla__container}>
           <div className={styles.embla__slide}>
-            <img src="https://generalhealthmagazine.files.wordpress.com/2019/11/dumbbell-press-bench-man-workout-1109-e1572890942637.jpg" />
+            <img src="http://cassstudios.com/wp-content/uploads/2014/11/woman_lifting_weights_detail_backmuscles.jpg" />
           </div>
           <div className={styles.embla__slide}>
-            <img src="https://generalhealthmagazine.files.wordpress.com/2019/11/dumbbell-press-bench-man-workout-1109-e1572890942637.jpg" />
+            <img src="https://wallpapercave.com/wp/wp7661163.jpg" />
           </div>
           <div className={styles.embla__slide}>
-            <img src="https://generalhealthmagazine.files.wordpress.com/2019/11/dumbbell-press-bench-man-workout-1109-e1572890942637.jpg" />
+            <img src="https://wallpapercave.com/wp/wp8487292.jpg" />
           </div>
         </div>
       </div>

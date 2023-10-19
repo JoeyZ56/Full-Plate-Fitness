@@ -12,7 +12,10 @@ const About = () => {
         transition={{ duration: 0.5, type: "tween" }}
         className={styles.logo}
       >
-        <img src="http://lh3.googleusercontent.com/rj_OuzLeGst1kdD-jtcx9wrCQ3LCfeeYvtUR8j7XrdxL5jL7ukJG4EVdyzkUxHAoPmA=w128" />
+        <img
+          src="https://scontent.fsac1-1.fna.fbcdn.net/v/t39.30808-6/369788167_10217994698418307_6792014141361599766_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=HJ-tWr_YJS8AX-CB0Ub&_nc_ht=scontent.fsac1-1.fna&oh=00_AfAi42rOZ4gXFawaBE2sVoPMKb6E93VAcgnF4QRK7pFE7g&oe=65364222"
+          className={styles.profileImg}
+        />
       </motion.div>
       <h1 className={styles.aboutTitle}>Experienced Fitness Professional</h1>
       <div className={styles.about}>
@@ -22,29 +25,22 @@ const About = () => {
           Nutrition Coach.
         </h3>
         <p>
-          I began my love for fitness back in 2018. Before then, I had been in
-          and out of the gym for 10+ years but in no way did I resemble
-          “healthy”. I was overweight, sad, and not happy with the way my life
-          was going. So I made a change and I began crossfit. It was then that I
-          fell in love with lifting heavy weights. The journey was great and I
-          felt so good but I knew that it wouldn’t be sustainable for me, so I
-          moved away from Crossfit and began my strength training in earnest. It
-          has been 5 years now and I know it was the right choice for me. I
-          began to feel better, make better choices when it came to nutrition,
-          stopped eating out as much, and really saw the changes in my body and
-          my mind. The mental clarity that training provided me was, and has
-          been, very rewarding. The physical changes to my body were just an
-          added bonus. Once I understood how much training helped my anxiety and
-          depression, and how good my body felt, I realized that I wanted to
-          help others feel the same way. My education has made that possible. My
-          passion is to be able to help you reach your goal, while learning to
-          enjoy the journey along the way. Taking care of ourselves can be hard
-          and can come with obstacles, but with my guidance I am here to teach
-          you to enjoy the process and make it something you will be able and
-          willing to continue throughout your life. Whether you are looking to
-          get stronger, have a healthier lifestyle, make better food choices
-          without thinking, or just want to be able to grab that soup can off
-          the top shelf without cringing, I am here for you!
+          <b>My Fitness Journey:</b>
+          <br />
+          From Struggle to Strength In 2018, my fitness journey began, fueled by
+          dissatisfaction with my health. A decade of on-and-off gym visits had
+          left me overweight and unhappy. Enter CrossFit—an initial love affair
+          with heavy weights that, while invigorating, wasn't sustainable for
+          me. Shifting to dedicated strength training five years ago proved
+          transformative. Beyond physical changes, this journey ignited mental
+          clarity and better nutritional choices. Recognizing the impact on
+          anxiety and depression, I felt a calling to help others. Through
+          education, my passion is guiding you to embrace the process, making
+          fitness a sustainable joy. Whether it's strength, a healthier
+          lifestyle, intuitive eating, or everyday feats, I'm here to support
+          your well-being journey.
+          <br />
+          <b>Let's make your goals a reality—together.</b>
         </p>
       </div>
     </div>
