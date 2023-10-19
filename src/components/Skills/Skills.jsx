@@ -33,7 +33,7 @@ const Skills = () => {
               </p>
               <p>
                 <b>Mental Resilience:</b> Strength training is not just about
-                physical prowess; it also fosters mental toughness and
+                physical prowess, it also fosters mental toughness and
                 discipline, instilling a positive mindset that extends beyond
                 the gym.
               </p>
