@@ -55,8 +55,8 @@ const Skills = () => {
               </p>
               <p>
                 <b>Enhanced Flexibility:</b> Improve your range of motion,
-                flexibility, and joint mobility, enhancing your body's ability
-                to move freely and efficiently.
+                flexibility, and joint mobility, enhancing your body&apos;s
+                ability to move freely and efficiently.
               </p>
               <p>
                 <b>Efficient Workouts:</b> Get more out of your workouts by
@@ -84,8 +84,8 @@ const Skills = () => {
                 <b>Accountability:</b> Achieving your health and fitness goals
                 requires more than just a workout routine. Our program
                 prioritizes accountability, offering the support you need to
-                stay on track. Together, we'll celebrate successes, navigate
-                challenges, and build habits that last a lifetime.
+                stay on track. Together, we&apos;ll celebrate successes,
+                navigate challenges, and build habits that last a lifetime.
               </p>
               <p>
                 <b>Education about food & fuel:</b> Knowledge is power,
@@ -99,9 +99,9 @@ const Skills = () => {
                 <b>Food/Macro tracking:</b> Tailor your nutrition to your unique
                 needs with our food and macro tracking system. Precision
                 nutrition is key to optimizing your energy levels, promoting
-                muscle growth, and achieving your desired physique. We'll guide
-                you through the process, making nutrition an integral part of
-                your success.
+                muscle growth, and achieving your desired physique. We&apos;ll
+                guide you through the process, making nutrition an integral part
+                of your success.
               </p>
             </ul>
           </>
