@@ -9,14 +9,13 @@ const reviews = [
   {
     id: 1,
     name: "Joey Zazzi",
-    desc: "Jen is a very dedicated and knowledgeable trainer. She is always willing to help and answer any questions you may have. She is very passionate about what she does and it shows in her work. I would highly recommend her to anyone looking for a trainer.",
+    desc: "Jennifer exemplifies unwavering dedication and expertise in her role as a fitness trainer. Her commitment to assisting and addressing inquiries underscores her profound knowledge. Demonstrating an evident passion for her craft, Jennifer's work speaks volumes. I wholeheartedly endorse her services to individuals seeking a highly qualified and dedicated trainer.",
     img: "https://i.imgur.com/GU7O8ql.jpg",
   },
   {
     id: 2,
-    name: "Bobby Nicks",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    img: "https://images.creativemarket.com/0.1.0/ps/1895597/1360/2166/m1/fpnw/wm1/wvgshco03n8e1avxqhpzuuxcukykfue1jlfdmgda5vxwatqgxe5ircqstmn7cv25-.jpg?1479174239&s=09b85f2cd288ebac54ced98a5083ed53",
+    name: "Sarah Wood",
+    desc: "Before Jenny I had very little knowledge on how food and a healthy lifestyle should look alongside the exercising that I was doing.  I had been so influenced by diet culture for so many years that by the time I found Jenny I was exhausted, I wasn’t feeding my body anywhere close to as much as I should have and my metabolism was shot. Jenny has given me so much helpful guidance since day one.  My relationship with my body and how I care for it has improved so much thanks to her!  She’s also been very reassuring during the whole process and very easy to talk to about anything that has come up. I hope to continue to have Jenny as my health and lifestyle coach and would recommend her to anyone who seeks guidance to a healthier lifestyle!",
   },
   {
     id: 3,
@@ -56,7 +55,7 @@ const Testimonials = () => {
             </motion.div>
 
             <div className={styles.info}>
-              <img src={review.img} alt="image" />
+              {review.img && <img src={review.img} alt="image" />}
               <div className={styles.review}>
                 <p>{review.desc}</p>
               </div>

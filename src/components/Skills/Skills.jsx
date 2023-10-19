@@ -9,57 +9,99 @@ const Skills = () => {
       </h1>
       <div className={styles.container}>
         <div className={styles.weightTraining}>
-          <h2>Weight Training</h2>
+          <h2>Style of Training</h2>
           <>
             <ul>
-              <li>Heavy Lifting</li>
+              <li>
+                <h3>Strength Training</h3>
+              </li>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
-                sequi voluptates et aliquid mollitia, nam repellendus libero rem
-                fugit porro cupiditate, saepe ea cumque accusamus a pariatur
-                esse ratione reiciendis.
+                <b>Build Lean Muscle Mass:</b> Sculpt your body and achieve a
+                toned, athletic physique by engaging in exercises that target
+                specific muscle groups
               </p>
-              <li>Calisthenics</li>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-                aliquam, tenetur doloribus perspiciatis esse unde! Eius rerum
-                error veniam soluta excepturi! Atque sapiente fuga dolore culpa
-                doloribus animi in mollitia?
+                <b>Boost Metabolism:</b> As you build muscle, your metabolism
+                revs up, helping you burn more calories both during and after
+                your workouts.
               </p>
-              <li>Light Lifting</li>
+
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-                dicta corrupti. Explicabo iusto distinctio quae, eos rerum
-                eligendi temporibus voluptas ad omnis repellat, ipsum autem
-                repellendus dicta, voluptates dolore? Nobis.
+                <b>Injury Prevention:</b> A well-rounded strength training
+                program not only builds strength but also supports joint
+                stability and flexibility, reducing the risk of injuries.
+              </p>
+              <p>
+                <b>Mental Resilience:</b> Strength training is not just about
+                physical prowess; it also fosters mental toughness and
+                discipline, instilling a positive mindset that extends beyond
+                the gym.
+              </p>
+              <br />
+              <li>
+                <h3>Functional Training</h3>
+              </li>
+
+              <p>
+                <b>Real-Life Applications:</b> Functional training targets
+                movements like pushing, pulling, bending, and twisting, ensuring
+                that your body is prepared for the demands of your daily
+                activities.
+              </p>
+              <p>
+                <b>Core Strength and Stability:</b> Develop a strong, stable
+                core—the foundation of functional movement—supporting your spine
+                and improving your posture.
+              </p>
+              <p>
+                <b>Enhanced Flexibility:</b> Improve your range of motion,
+                flexibility, and joint mobility, enhancing your body's ability
+                to move freely and efficiently.
+              </p>
+              <p>
+                <b>Efficient Workouts:</b> Get more out of your workouts by
+                engaging multiple muscle groups simultaneously, burning
+                calories, and building strength in a time-efficient manner.
               </p>
             </ul>
           </>
         </div>
         <div className={styles.nutrition}>
-          <h2>Nutrition</h2>
+          <h2>Nutrition Coach</h2>
           <>
             <ul>
-              <li>Dieting</li>
+              <li>
+                <h3>What that includes:</h3>
+              </li>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
-                sequi voluptates et aliquid mollitia, nam repellendus libero rem
-                fugit porro cupiditate, saepe ea cumque accusamus a pariatur
-                esse ratione reiciendis.
+                <b>Weekly Meetings:</b> Embark on a journey of self-discovery
+                and sustainable health through our weekly one-on-one meetings.
+                These sessions provide a platform for personalized guidance,
+                progress assessments, and adjustments to ensure your fitness
+                plan aligns with your evolving goals.
               </p>
-              <li>Calorie Counting</li>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-                aliquam, tenetur doloribus perspiciatis esse unde! Eius rerum
-                error veniam soluta excepturi! Atque sapiente fuga dolore culpa
-                doloribus animi in mollitia?
+                <b>Accountability:</b> Achieving your health and fitness goals
+                requires more than just a workout routine. Our program
+                prioritizes accountability, offering the support you need to
+                stay on track. Together, we'll celebrate successes, navigate
+                challenges, and build habits that last a lifetime.
               </p>
-              <li>Proper Foods</li>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-                dicta corrupti. Explicabo iusto distinctio quae, eos rerum
-                eligendi temporibus voluptas ad omnis repellat, ipsum autem
-                repellendus dicta, voluptates dolore? Nobis.
+                <b>Education about food & fuel:</b> Knowledge is power,
+                especially when it comes to nutrition. Gain a deeper
+                understanding of how food fuels your body, and discover the
+                impact it has on your overall well-being. Our educational
+                sessions empower you to make informed choices, fostering a
+                healthier relationship with food.
+              </p>
+              <p>
+                <b>Food/Macro tracking:</b> Tailor your nutrition to your unique
+                needs with our food and macro tracking system. Precision
+                nutrition is key to optimizing your energy levels, promoting
+                muscle growth, and achieving your desired physique. We'll guide
+                you through the process, making nutrition an integral part of
+                your success.
               </p>
             </ul>
           </>
