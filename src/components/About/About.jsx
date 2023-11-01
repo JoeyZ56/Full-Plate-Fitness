@@ -2,6 +2,8 @@
 import React from "react";
 import styles from "./About.module.scss";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { jensPhoto } from "../../assets";
 
 const About = () => {
   return (
@@ -12,8 +14,11 @@ const About = () => {
         transition={{ duration: 0.5, type: "tween" }}
         className={styles.logo}
       >
-        <img
-          src="https://scontent.fsac1-1.fna.fbcdn.net/v/t39.30808-6/369788167_10217994698418307_6792014141361599766_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=HJ-tWr_YJS8AX-CB0Ub&_nc_ht=scontent.fsac1-1.fna&oh=00_AfAi42rOZ4gXFawaBE2sVoPMKb6E93VAcgnF4QRK7pFE7g&oe=65364222"
+        <Image
+          src={jensPhoto}
+          alt="Jennifer's photo"
+          width={400}
+          height={400}
           className={styles.profileImg}
         />
       </motion.div>

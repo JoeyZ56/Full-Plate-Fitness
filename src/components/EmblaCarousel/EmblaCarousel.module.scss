@@ -3,15 +3,18 @@
 }
 .headerImg {
   position: absolute;
-  top: 20%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+
+  width: 250px;
+  height: 250px;
 }
 
 .carouselHeading {
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -22,7 +25,7 @@
 
 .carouselSubheading {
   position: absolute;
-  top: 40%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -31,7 +34,7 @@
 }
 .carouselSubheading2 {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;

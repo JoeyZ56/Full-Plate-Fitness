@@ -22,7 +22,6 @@ const Navbar = () => {
       <motion.div whileHover={{ scale: 1.1 }}>
         <Link href="#contact">Contact</Link>
       </motion.div>
-      <SocialMedia />
     </nav>
   );
 };
