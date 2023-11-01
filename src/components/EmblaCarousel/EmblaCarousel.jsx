@@ -14,7 +14,8 @@ export const EmblaCarousel = () => {
       <h1 className={styles.carouselHeading}>Full Plate Fitness</h1>
       <h2 className={styles.carouselSubheading}>Personal Training</h2>
       <h3 className={styles.carouselSubheading2}>
-        Transforming Lives, One Rep at a Time
+        Transforming Lives <br />
+        <span>One Rep at a Time</span>
       </h3>
 
       <div className={styles.embla} ref={emblaRef} id="embla">
