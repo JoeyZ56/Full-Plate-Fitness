@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Contact.module.scss";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { phone, email } from "../../assets";
 
 import Link from "next/link";
 
@@ -20,11 +22,7 @@ const Contact = () => {
               transition={{ duration: 0.5, type: "tween" }}
               className={styles.info}
             >
-              <img
-                src="https://i.imgur.com/AH73oGY.png "
-                alt="email"
-                className={styles.icons}
-              />
+              <Image src={email} alt="email" className={styles.icons} />
               {/* //"mailto" is a specail property that takes you to a link to email the person */}
               <p>jennifermccurdy@gmail.com</p>
             </motion.div>
@@ -36,11 +34,7 @@ const Contact = () => {
               transition={{ duration: 0.5, type: "tween" }}
               className={styles.info}
             >
-              <img
-                src=" https://i.imgur.com/vumkygf.png"
-                alt="mobile"
-                className={styles.icons}
-              />
+              <Image src={phone} alt="mobile" className={styles.icons} />
               {/* //"tel:" */}
               <p>+1 (530) 514-2339</p>
             </motion.div>
