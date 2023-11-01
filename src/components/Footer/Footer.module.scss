@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #333; /* You can set your desired background color */
+  color: #fff; /* You can set your desired text color */
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 10px; /* Adjust spacing between logo and copyright text */
+  width: 50px; /* Adjust the width as per your logo's dimensions */
+  height: 50px; /* Adjust the height as per your logo's dimensions */
+}
+
+.copyRight {
+  margin: 0; /* Remove default margin */
+}
+
+.socialMedia {
+  display: flex; /* Display social media links horizontally */
+  list-style: none; /* Remove list bullet points */
+  padding: 0; /* Remove padding on the list */
+}
+
+.socialMedia li {
+  margin-right: 10px; /* Adjust spacing between social media icons */
+}
+
+/* Add CSS for your social media icons as needed */

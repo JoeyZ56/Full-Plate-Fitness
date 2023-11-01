@@ -25,13 +25,13 @@ const SocialMedia = () => {
         drag="x"
         dragConstraints={{ left: -100, right: 100 }}
       >
-        <a
+        {/* <a
           href="http://www.linkedin.com/in/joseph-zazzi-8bab68a1"
           target="_blank"
           rel="noreferrer"
         >
           <FaLinkedin />
-        </a>
+        </a> */}
       </motion.div>
     </div>
   );
