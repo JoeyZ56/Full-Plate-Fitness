@@ -4,6 +4,7 @@ import styles from "./Testimonials.module.scss";
 import { useState } from "react";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const reviews = [
   {
@@ -49,9 +50,9 @@ const Testimonials = () => {
             </motion.div>
 
             <div className={styles.info}>
-              {review.img && <img src={review.img} alt="image" />}
+              {review.img && <Image src={review.img} alt="image" />}
               <div className={styles.review}>
-                <p>" {review.desc} "</p>
+                <p>&quot; {review.desc} &quot;</p>
               </div>
               <h4>- {review.name}</h4>
             </div>
