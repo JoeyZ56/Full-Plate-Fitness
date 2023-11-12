@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 3rem;
 }
 .reviewsTitle {
@@ -12,7 +13,8 @@
   justify-content: center;
 
   margin-top: 2rem;
-  margin-bottom: -1rem;
+  font-size: 2.5rem;
+
   color: #fff;
 }
 
@@ -46,43 +48,52 @@
 
     display: inline;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+  }
 }
 
 .name {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 1rem;
+  }
 }
 
-.right {
-  width: 15px;
-  height: 15px;
-  margin-left: 1rem;
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 2rem;
+
+  @media screen and (max-width: 768px) {
+  }
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
 
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   padding: 1rem;
+
+  h1 {
+    margin: 0;
+  }
 
   &:hover {
     cursor: pointer;
     background-color: #ccc;
   }
-}
-.left {
-  width: 15px;
-  height: 15px;
-  margin-right: 1rem;
 
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-
-  &:hover {
-    cursor: pointer;
-    background-color: #ccc;
+  @media screen and (max-width: 768px) {
   }
 }

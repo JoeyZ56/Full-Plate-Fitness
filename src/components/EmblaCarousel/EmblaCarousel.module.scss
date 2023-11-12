@@ -10,16 +10,10 @@
 
   width: 250px;
   height: 250px;
-}
-@media (max-width: 768px) {
-  .headerImg {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+
+  @media screen and (max-width: 768px) {
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -32,6 +26,17 @@
   color: #fff;
 
   font-size: 5rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    top: 20%;
+  }
+  @media screen and (max-width: 912px) {
+    font-size: 3.5rem;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 4rem;
+  }
 }
 
 .carouselSubheading {
@@ -42,6 +47,11 @@
   z-index: 2;
   color: #fff;
   font-size: 3rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    top: 30%;
+  }
 }
 .carouselSubheading2 {
   position: absolute;
@@ -51,6 +61,11 @@
   z-index: 2;
   color: #fff;
   font-size: 3rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    top: 40%;
+  }
 }
 
 .embla {
@@ -81,6 +96,13 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    width: 50vw;
+    height: 50vh;
+
+    margin-top: 3rem;
+  }
 }
 
 .embla__slide img {

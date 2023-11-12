@@ -1,13 +1,13 @@
-// components/Navbar.js
-import Link from "next/link";
-import styles from "./Navbar.module.scss";
+import React from "react";
+import styles from "./Sidebar.module.scss";
+import { slide as Menu } from "react-burger-menu";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import Link from "next/link";
 
-const Navbar = () => {
+export default (props) => {
   return (
-    <nav className={styles.navbar}>
-      <motion.div whileHover={{ scale: 1.1 }} className={styles.embla}>
+    <Menu className={styles.menuContainer}>
+      <motion.div whileHover={{ scale: 1.1 }}>
         <Link href="#embla">Full Plate Fitness</Link>
       </motion.div>
       <motion.div whileHover={{ scale: 1.1 }}>
@@ -22,8 +22,6 @@ const Navbar = () => {
       <motion.div whileHover={{ scale: 1.1 }}>
         <Link href="#contact">Contact</Link>
       </motion.div>
-    </nav>
+    </Menu>
   );
 };
-
-export default Navbar;
