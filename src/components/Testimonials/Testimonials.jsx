@@ -36,38 +36,37 @@ const Testimonials = () => {
   const review = reviews[currentIndex];
 
   return (
-    <>
+    <div className={styles.container} id="reviews">
       <h1 className={styles.reviewsTitle}>Client Reviews</h1>
-      <div className={styles.container} id="reviews">
-        {review && (
-          <>
-            <motion.div
-              className={styles.left}
-              onClick={() => handleClick(currentIndex - 1)}
-              whileHover={{ scale: 1.1 }}
-            >
-              <HiChevronLeft />
-            </motion.div>
 
-            <div className={styles.info}>
-              {review.img && <Image src={review.img} alt="image" />}
-              <div className={styles.review}>
-                <p>&quot; {review.desc} &quot;</p>
-              </div>
-              <h4>- {review.name}</h4>
-            </div>
+      {review && (
+        <div className={styles.info}>
+          {review.img && <Image src={review.img} alt="image" />}
+          <div className={styles.review}>
+            <p>&quot; {review.desc} &quot;</p>
+          </div>
+          <h4>- {review.name}</h4>
+        </div>
+      )}
 
-            <motion.div
-              className={styles.right}
-              onClick={() => handleClick(currentIndex + 1)}
-              whileHover={{ scale: 1.1 }}
-            >
-              <HiChevronRight />
-            </motion.div>
-          </>
-        )}
+      <div className={styles.arrowContainer}>
+        <motion.div
+          className={styles.arrows}
+          onClick={() => handleClick(currentIndex - 1)}
+          whileHover={{ scale: 1.1 }}
+        >
+          <h1>←</h1>
+        </motion.div>
+
+        <motion.div
+          className={styles.arrows}
+          onClick={() => handleClick(currentIndex + 1)}
+          whileHover={{ scale: 1.1 }}
+        >
+          <h1>→</h1>
+        </motion.div>
       </div>
-    </>
+    </div>
   );
 };
 
