@@ -45,8 +45,12 @@
 
   p {
     margin-top: 0;
+    font-size: 1.2rem;
 
-    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   @media screen and (max-width: 768px) {
@@ -70,9 +74,6 @@
   align-items: center;
   margin-top: 1rem;
   gap: 2rem;
-
-  @media screen and (max-width: 768px) {
-  }
 }
 
 .arrows {
@@ -92,8 +93,5 @@
   &:hover {
     cursor: pointer;
     background-color: #ccc;
-  }
-
-  @media screen and (max-width: 768px) {
   }
 }
