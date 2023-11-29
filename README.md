@@ -1,6 +1,13 @@
 <div>
 
-  <h1>Wireframe</h1>
+# Wireframe
 
-  blob:https://imgur.com/c8792784-0401-4c52-937f-8320b1959751
+<img src="https://i.imgur.com/r3j82jJ.png"/>
+
+## Todo's
+
+### Finish media queries
+
+### Add hamburger menu for mobile navbar
+
 </div>
