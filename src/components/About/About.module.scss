@@ -25,6 +25,18 @@
     width: 100vw;
 
     gap: 1rem;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 380px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 1rem;
   }
 }
 
@@ -40,10 +52,12 @@
   color: #fff;
 
   @media screen and (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    text-align: center;
   }
 }
 

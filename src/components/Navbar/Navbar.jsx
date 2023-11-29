@@ -1,26 +1,42 @@
 // components/Navbar.js
-import Link from "next/link";
+// import Link from "next/link";
 import styles from "./Navbar.module.scss";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <nav className={styles.navbar}>
-      <motion.div whileHover={{ scale: 1.1 }} className={styles.embla}>
-        <Link href="#embla">Full Plate Fitness</Link>
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        onClick={scrollToTop}
+        className={styles.embla}
+      >
+        Full Plate Fitness
       </motion.div>
       <motion.div whileHover={{ scale: 1.1 }}>
-        <Link href="#about">About</Link>
+        <ScrollLink to="about" smooth={true} duration={500}>
+          About
+        </ScrollLink>
       </motion.div>
       <motion.div whileHover={{ scale: 1.1 }}>
-        <Link href="#skills">Skills</Link>
+        <ScrollLink to="skills" smooth={true} duration={500}>
+          Skills
+        </ScrollLink>
       </motion.div>
       <motion.div whileHover={{ scale: 1.1 }}>
-        <Link href="#reviews">Reviews</Link>
+        <ScrollLink to="reviews" smooth={true} duration={500}>
+          Reviews
+        </ScrollLink>
       </motion.div>
       <motion.div whileHover={{ scale: 1.1 }}>
-        <Link href="#contact">Contact</Link>
+        <ScrollLink to="contact" smooth={true} duration={500}>
+          Contact
+        </ScrollLink>
       </motion.div>
     </nav>
   );

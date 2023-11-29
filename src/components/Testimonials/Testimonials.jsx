@@ -2,7 +2,6 @@
 import React from "react";
 import styles from "./Testimonials.module.scss";
 import { useState } from "react";
-import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -17,6 +16,16 @@ const reviews = [
     name: "Joey Zazzi",
     desc: "Jennifer exemplifies unwavering dedication and expertise in her role as a fitness trainer. Her commitment to assisting and addressing inquiries underscores her profound knowledge. Demonstrating an evident passion for her craft, Jennifer's work speaks volumes. I wholeheartedly endorse her services to individuals seeking a highly qualified and dedicated trainer.",
     // img: "https://i.imgur.com/GU7O8ql.jpg",
+  },
+  {
+    id: 3,
+    name: "Martina Garcia",
+    desc: "Hello, my name is Martina and Jennifer was my first trainer. I must say I was a little bit nervous to start my journey but I&apos;m glad I did. My goal was to gain muscle and tone my body. She has taught me to be more confident in lifting weights and doing everything on my own. If it wasn’t for her I would not be doing it still. She is amazing and a great trainer. I have now been lifting for 9 months and owe it to her. I would definitely recommend hiring her as your trainer.",
+  },
+  {
+    id: 4,
+    name: "Xena Gail",
+    desc: "My best decision I have made for myself was the commitment to improve my physical well-being. I started working with Jenny in September 2022. Throughout my lifetime I have joined many different gyms and exercise programs with the goal to get physically fit. After not finding what I was looking for I decided to hire a trainer. After working with Jenny I have been blessed with the best trainer ever, in fact I don’t call her my trainer I call her my “exercise coach”. She coaches and encourages to find my better self. I feel stronger, I can now see muscles in my arms and legs, I have a lot more energy and my balance has greatly improved. In turn I feel better about myself physically and mentally.",
   },
 ];
 

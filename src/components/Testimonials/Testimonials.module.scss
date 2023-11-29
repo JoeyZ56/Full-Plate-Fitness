@@ -16,6 +16,14 @@
   font-size: 2.5rem;
 
   color: #fff;
+
+  @media screen and (max-width: 380px) {
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
 }
 
 .info {
@@ -44,7 +52,7 @@
   }
 
   p {
-    margin-top: 0;
+    margin-top: 1rem;
     font-size: 1.2rem;
 
     display: flex;
@@ -53,8 +61,22 @@
     text-align: center;
   }
 
+  h4 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
   @media screen and (max-width: 768px) {
     width: 100vw;
+
+    p {
+      margin-top: 0.5rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
   }
 }
 
@@ -93,5 +115,8 @@
   &:hover {
     cursor: pointer;
     background-color: #ccc;
+  }
+
+  @media screen and (max-width: 768px) {
   }
 }
