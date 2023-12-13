@@ -11,8 +11,10 @@ const Contact = () => {
     <div className={styles.container} id="contact">
       <div className={styles.contactText}>
         <h2 className={styles.title}>
-          <span>For personalized fitness guidance tailored to your goals</span>
-          <span>please feel free to reach out</span>
+          <span>
+            For personalized fitness guidance tailored to your goals please feel
+            free to reach out!
+          </span>
         </h2>
       </div>
       <div className={styles.infoContainer}>

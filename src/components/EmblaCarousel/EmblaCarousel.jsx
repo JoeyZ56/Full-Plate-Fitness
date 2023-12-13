@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import styles from "./EmblaCarousel.module.scss";
@@ -7,6 +8,12 @@ import { logo, slide1, slide2, slide3 } from "../../assets";
 
 export const EmblaCarousel = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+
+  useEffect(() => {
+    if (emblaRef) {
+      Autoplay(emblaRef);
+    }
+  }, [emblaRef]);
 
   return (
     <div className={styles.carouselContainer}>

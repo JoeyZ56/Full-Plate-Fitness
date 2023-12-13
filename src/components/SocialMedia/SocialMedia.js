@@ -19,20 +19,6 @@ const SocialMedia = () => {
           <FaFacebook />
         </a>
       </motion.div>
-      <motion.div
-        whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 1.1 }}
-        drag="x"
-        dragConstraints={{ left: -100, right: 100 }}
-      >
-        {/* <a
-          href="http://www.linkedin.com/in/joseph-zazzi-8bab68a1"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaLinkedin />
-        </a> */}
-      </motion.div>
     </div>
   );
 };

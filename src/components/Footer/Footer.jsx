@@ -9,11 +9,11 @@ const Footer = () => {
     <div className={styles.container}>
       <div className={styles.logoContainer}>
         <Image src={logo} alt="logo" className={styles.logo} />
-      </div>
-      <div>
         <h3 className={styles.copyRight}>Full Plate Fitness &copy;</h3>
       </div>
+
       <div className={styles.socialMedia}>
+        <h3 className={styles.socialTitle}>Find me on Facebook!</h3>
         <SocialMedia />
       </div>
     </div>

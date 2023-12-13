@@ -8,6 +8,8 @@ import slide1 from "./slide1.png";
 import slide2 from "./slide2.png";
 import slide3 from "./slide3.png";
 import wireframe from "./wireframe.png";
+import gymMobile from "./gymmobile.jpeg";
+import foodMobile from "./foodmobile.jpeg";
 
 export {
   jensPhoto,
@@ -20,4 +22,6 @@ export {
   slide2,
   slide3,
   wireframe,
+  gymMobile,
+  foodMobile,
 };
