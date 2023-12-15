@@ -10,6 +10,7 @@ import slide3 from "./slide3.png";
 import wireframe from "./wireframe.png";
 import gymMobile from "./gymmobile.jpeg";
 import foodMobile from "./foodmobile.jpeg";
+import JensPic from "./jensProfilePic2.jpg";
 
 export {
   jensPhoto,
@@ -24,4 +25,5 @@ export {
   wireframe,
   gymMobile,
   foodMobile,
+  JensPic,
 };
