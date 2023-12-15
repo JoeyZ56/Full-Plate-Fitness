@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./About.module.scss";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { jensPhoto } from "../../assets";
+import { JensPic } from "../../assets";
 
 const About = () => {
   return (
@@ -15,7 +15,7 @@ const About = () => {
         className={styles.logo}
       >
         <Image
-          src={jensPhoto}
+          src={JensPic}
           alt="Jennifer's photo"
           width={400}
           height={400}
