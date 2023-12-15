@@ -15,6 +15,7 @@ const Navbar = () => {
         whileHover={{ scale: 1.1 }}
         onClick={scrollToTop}
         className={styles.embla}
+        style={{ cursor: "pointer" }}
       >
         Full Plate Fitness
       </motion.div>

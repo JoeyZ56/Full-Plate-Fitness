@@ -27,7 +27,7 @@ const Skills = () => {
               </p>
 
               <p>
-                <b>Injury Prevention:</b> A well-rounded strength training
+                <b>Injury Prevention:</b> A well rounded strength training
                 program not only builds strength but also supports joint
                 stability and flexibility, reducing the risk of injuries.
               </p>
@@ -50,8 +50,8 @@ const Skills = () => {
               </p>
               <p>
                 <b>Core Strength and Stability:</b> Develop a strong, stable
-                core—the foundation of functional movement—supporting your spine
-                and improving your posture.
+                core is the foundation of functional movement supporting your
+                spine and improving your posture.
               </p>
               <p>
                 <b>Enhanced Flexibility:</b> Improve your range of motion,
@@ -61,7 +61,7 @@ const Skills = () => {
               <p>
                 <b>Efficient Workouts:</b> Get more out of your workouts by
                 engaging multiple muscle groups simultaneously, burning
-                calories, and building strength in a time-efficient manner.
+                calories, and building strength in a time efficient manner.
               </p>
             </ul>
           </>
@@ -74,8 +74,8 @@ const Skills = () => {
                 <h3>What that includes:</h3>
               </li>
               <p>
-                <b>Weekly Meetings:</b> Embark on a journey of self-discovery
-                and sustainable health through our weekly one-on-one meetings.
+                <b>Weekly Meetings:</b> Embark on a journey of self discovery
+                and sustainable health through our weekly one on one meetings.
                 These sessions provide a platform for personalized guidance,
                 progress assessments, and adjustments to ensure your fitness
                 plan aligns with your evolving goals.
@@ -91,7 +91,7 @@ const Skills = () => {
                 <b>Education about food & fuel:</b> Knowledge is power,
                 especially when it comes to nutrition. Gain a deeper
                 understanding of how food fuels your body, and discover the
-                impact it has on your overall well-being. Our educational
+                impact it has on your overall well being. Our educational
                 sessions empower you to make informed choices, fostering a
                 healthier relationship with food.
               </p>
