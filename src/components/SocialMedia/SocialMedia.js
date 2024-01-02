@@ -5,20 +5,18 @@ import { motion } from "framer-motion";
 const SocialMedia = () => {
   return (
     <div className={styles.socailMedia}>
-      <motion.div
-        whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 1.1 }}
-        drag="x"
-        dragConstraints={{ left: -100, right: 100 }}
-      >
+      <div>
         <a
           href="https://www.facebook.com/jennifer.mccurdy.980"
           target="_blank"
           rel="noreferrer"
         >
-          <FaFacebook />
+          <h3 className={styles.soc_title}>Find Me On FaceBook!</h3>
+          <div className={styles.facebook_icon}>
+            <FaFacebook />
+          </div>
         </a>
-      </motion.div>
+      </div>
     </div>
   );
 };

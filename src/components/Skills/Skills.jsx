@@ -67,7 +67,7 @@ const Skills = () => {
           </>
         </div>
         <div className={styles.nutrition}>
-          <h2>Nutrition Coach</h2>
+          <h2>Nutrition Coaching</h2>
           <>
             <ul>
               <li>

@@ -1,14 +1,14 @@
 .socailMedia {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  a,
+  h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  gap: 1rem;
-
-  a {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
+    gap: 10px;
 
     &:hover {
       color: #75757b;
@@ -16,7 +16,12 @@
     }
 
     @media (max-width: 768px) {
-      font-size: 1.3rem;
+      font-size: 2rem;
+      margin-right: 20px;
+
+      h3 {
+        display: none;
+      }
     }
   }
 }
