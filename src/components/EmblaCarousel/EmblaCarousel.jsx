@@ -21,20 +21,22 @@ export const EmblaCarousel = () => {
       <h1 className={styles.carouselHeading}>Full Plate Fitness</h1>
       <h2 className={styles.carouselSubheading}>Personal Training</h2>
       <h3 className={styles.carouselSubheading2}>
-        Transforming Lives <br />
-        <span>One Rep at a Time</span>
+        <i>
+          Transforming Lives <br />
+          One Rep at a Time
+        </i>
       </h3>
 
       <div className={styles.embla} ref={emblaRef} id="embla">
         <div className={styles.embla__container}>
           <div className={styles.embla__slide}>
-            <Image src={slide1} alt="slide1" />
+            <Image src={slide1} alt="slide1" className={styles.img} />
           </div>
           <div className={styles.embla__slide}>
-            <Image src={slide2} alt="slide2" />
+            <Image src={slide2} alt="slide2" className={styles.img} />
           </div>
           <div className={styles.embla__slide}>
-            <Image src={slide3} alt="slide3" />
+            <Image src={slide3} alt="slide3" className={styles.img} />
           </div>
         </div>
       </div>

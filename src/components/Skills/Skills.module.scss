@@ -92,14 +92,26 @@
 }
 
 .nutrition {
-  background-image: url("../../assets/food.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/newFood.jpeg");
   background-size: cover;
+
   color: white;
 
-  font-size: larger;
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+  }
 
   @media screen and (max-width: 780px) {
-    background-image: url("../../assets/foodmobile.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/foodmobile.jpeg");
     background-size: cover;
 
     border: none;
@@ -113,14 +125,26 @@
 }
 
 .weightTraining {
-  background-image: url("../../assets/weights.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/weights.png");
   background-size: cover;
+
   color: white;
 
-  font-size: larger;
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+  }
 
   @media screen and (max-width: 780px) {
-    background-image: url("../../assets/gymmobile.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("../../assets/gymmobile.jpeg");
     background-size: cover;
     border: none;
 

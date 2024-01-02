@@ -13,7 +13,6 @@ const Footer = () => {
       </div>
 
       <div className={styles.socialMedia}>
-        <h3 className={styles.socialTitle}>Find me on Facebook!</h3>
         <SocialMedia />
       </div>
     </div>

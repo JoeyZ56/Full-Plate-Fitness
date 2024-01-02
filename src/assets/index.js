@@ -1,6 +1,5 @@
-import jensPhoto from "./profilepic.png";
 import logo from "./logo.png";
-import food from "./food.png";
+import food from "./newFood.jpeg";
 import weights from "./weights.png";
 import email from "./email.png";
 import phone from "./phone.png";
@@ -13,7 +12,6 @@ import foodMobile from "./foodmobile.jpeg";
 import JensPic from "./jensProfilePic2.jpg";
 
 export {
-  jensPhoto,
   logo,
   food,
   weights,
