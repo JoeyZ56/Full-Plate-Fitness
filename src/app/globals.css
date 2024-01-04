@@ -19,11 +19,11 @@ body {
 .nav-header {
   background-color: rgba(51, 51, 51, 0.8);
   position: fixed;
-  top: 0;
+  /* top: 0; */
   width: 100%;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   z-index: 1000;
   color: white;
@@ -31,8 +31,6 @@ body {
 
 .nav-header__container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
@@ -48,6 +46,7 @@ body {
 .nav-header a {
   display: block;
   padding: 8px;
+  margin-right: 5px;
 }
 
 .nav-header a:hover {
@@ -80,46 +79,67 @@ body {
 }
 
 .nav-title {
+  margin-right: 800px;
+  font-size: 1.5rem;
   &:hover {
     color: #ccc;
     cursor: pointer;
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .nav-title {
-    font-size: 1.8rem;
-    width: 79%;
-  }
-  .nav-logo {
-    width: 38px;
-    height: 38px;
-  }
-
-  .nav-list_container {
-    font-size: 1.1rem;
-  }
+.nav-logo {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
 }
 
 @media screen and (max-width: 768px) {
+  .nav-header__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .nav-title {
+    margin: 10px 0;
+  }
+
+  .nav-header a {
+    display: block;
+    padding: 8px;
+    margin-right: 5px;
+    width: auto;
+  }
+
   .nav-header_menuItems {
     display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%; /* Position below the header */
+    right: 0; /* Align to the right */
+    background-color: rgba(51, 51, 51, 0.8);
   }
 
   .nav-header_menuItems.is-open {
     display: block;
   }
 
-  .nav-header__trigger {
-    display: block;
+  .nav-header_menuItems ul {
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    text-align: right; /* Align the links to the right */
   }
 
-  .nav-header a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .nav-header_menuItems a {
+    display: block;
+    padding: 8px;
+    margin: 5px 0; /* Adjusted margin */
     width: 100%;
-    margin-left: 0.8rem;
+  }
+
+  .nav-header__trigger {
+    display: block;
   }
 
   .bar {
@@ -146,10 +166,10 @@ body {
     width: 30px;
     height: 30px;
   }
+}
 
-  .nav-header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@media screen and (min-width: 1024px) {
+  .nav-list {
+    margin-left: 500px;
   }
 }
