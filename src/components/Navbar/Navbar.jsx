@@ -42,7 +42,7 @@ const Navbar = () => {
           className={`nav-header_menuItems ${isOpen ? "is-open" : ""}`}
           style={{ listStyle: "none" }}
         >
-          <ul>
+          <ul className="nav-list">
             <li style={{ listStyle: "none" }} className="nav-list_container">
               <ScrollLink
                 to="about"
