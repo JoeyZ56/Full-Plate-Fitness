@@ -18,7 +18,7 @@ export const EmblaCarousel = () => {
   return (
     <div className={styles.carouselContainer}>
       <Image src={logo} className={styles.headerImg} alt="logo" />
-      <h1 className={styles.carouselHeading}>Full Plate Fitness</h1>
+      {/* <h1 className={styles.carouselHeading}>Full Plate Fitness</h1> */}
       <h2 className={styles.carouselSubheading}>Personal Training</h2>
       <h3 className={styles.carouselSubheading2}>
         <i>

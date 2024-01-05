@@ -12,47 +12,47 @@
   height: 250px;
 
   @media screen and (max-width: 768px) {
-    top: 68%;
+    top: 55%;
     width: 120px;
     height: 120px;
   }
 }
 
-.carouselHeading {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  color: #fff;
+// .carouselHeading {
+//   position: absolute;
+//   top: 10%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   z-index: 2;
+//   color: #fff;
 
-  font-size: 5rem;
+//   font-size: 5rem;
 
-  @media screen and (max-width: 768px) {
-    font-size: 1.2rem;
-    top: 20%;
-  }
+//   @media screen and (max-width: 768px) {
+//     font-size: 1.2rem;
+//     top: 20%;
+//   }
 
-  @media screen and (min-width: 1000px) {
-    font-size: 4rem;
-  }
-  @media screen and (max-width: 280px) {
-    font-size: 1.1rem;
-  }
-}
+//   @media screen and (min-width: 1000px) {
+//     font-size: 4rem;
+//   }
+//   @media screen and (max-width: 280px) {
+//     font-size: 1.1rem;
+//   }
+// }
 
 .carouselSubheading {
   position: absolute;
-  top: 20%;
+  top: 12%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   color: #fff;
-  font-size: 3rem;
+  font-size: 4rem;
 
   @media screen and (max-width: 768px) {
-    font-size: 1rem;
-    top: 30%;
+    font-size: 1.5rem;
+    top: 15%;
   }
 }
 .carouselSubheading2 {
@@ -65,8 +65,8 @@
   font-size: 3rem;
 
   @media screen and (max-width: 768px) {
-    font-size: 1rem;
-    top: 40%;
+    font-size: 1.5rem;
+    top: 30%;
   }
 }
 
