@@ -30,13 +30,13 @@ export const EmblaCarousel = () => {
       <div className={styles.embla} ref={emblaRef} id="embla">
         <div className={styles.embla__container}>
           <div className={styles.embla__slide}>
-            <Image src={slide1} alt="slide1" className={styles.img} />
-          </div>
-          <div className={styles.embla__slide}>
             <Image src={slide2} alt="slide2" className={styles.img} />
           </div>
           <div className={styles.embla__slide}>
             <Image src={slide3} alt="slide3" className={styles.img} />
+          </div>
+          <div className={styles.embla__slide}>
+            <Image src={slide1} alt="slide1" className={styles.img} />
           </div>
         </div>
       </div>
