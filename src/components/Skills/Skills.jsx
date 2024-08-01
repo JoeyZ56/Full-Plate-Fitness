@@ -59,7 +59,7 @@ const Skills = () => {
           <h2>Style of Training</h2>
           <ul>
             <TrainingType
-              title="Strength Training"
+              title="Strength Training:"
               content={[
                 {
                   title: "Build Lean Muscle Mass",
@@ -85,7 +85,7 @@ const Skills = () => {
               className={styles.trainingType}
             />
             <TrainingType
-              title="Functional Training"
+              title="Functional Training:"
               content={[
                 {
                   title: "Real-Life Applications",
