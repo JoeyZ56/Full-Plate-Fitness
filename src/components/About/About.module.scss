@@ -77,6 +77,8 @@
 .profileImg {
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 250px;
+  height: 250px;
 
   @media screen and (max-width: 768px) {
     width: 150px;
