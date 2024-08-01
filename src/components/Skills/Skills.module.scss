@@ -52,7 +52,7 @@
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   @media screen and (max-width: 768px) {
@@ -88,7 +88,7 @@
   margin-bottom: 1rem;
 
   &:hover {
-    color: #ccc;
+    color: #eb5454;
   }
 
   @media screen and (max-width: 768px) {
@@ -100,6 +100,15 @@
 .nutrition p {
   margin-bottom: 10px;
   font-size: 1rem;
+}
+
+.weightTraining h1,
+.nutrition h1 {
+  font-size: 2rem;
+}
+.weightTraining h3,
+.nutrition h3 {
+  font-size: 1.5rem;
 }
 
 .nutrition {
@@ -131,14 +140,6 @@
   background-size: cover;
   color: white;
 
-  h2 {
-    font-size: 2.2rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
   @media screen and (max-width: 780px) {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url("../../assets/gymmobile.jpeg");
@@ -162,14 +163,14 @@
 
 .moreInfo {
   font-size: 0.8rem;
-  color: #777;
+  color: #ccc;
   margin-left: 8px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   text-decoration: none;
 
   &:hover {
-    color: #ccc;
+    color: #eb5454;
   }
 
   @media screen and (max-width: 768px) {
