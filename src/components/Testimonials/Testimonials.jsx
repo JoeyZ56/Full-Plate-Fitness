@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
-import styles from "./Testimonials.module.scss";
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Box, Typography, IconButton, Card, CardContent } from "@mui/material";
+import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
 const reviews = [
   {
@@ -15,7 +15,6 @@ const reviews = [
     id: 2,
     name: "Joey Zazzi",
     desc: "Jennifer exemplifies unwavering dedication and expertise in her role as a fitness trainer. Her commitment to assisting and addressing inquiries underscores her profound knowledge. Demonstrating an evident passion for her craft, Jennifer's work speaks volumes. I wholeheartedly endorse her services to individuals seeking a highly qualified and dedicated trainer.",
-    // img: "https://i.imgur.com/GU7O8ql.jpg",
   },
   {
     id: 3,
@@ -45,37 +44,61 @@ const Testimonials = () => {
   const review = reviews[currentIndex];
 
   return (
-    <div className={styles.container} id="reviews">
-      <h1 className={styles.reviewsTitle}>Client Reviews</h1>
+    <Box id="reviews" sx={{ padding: "2rem", textAlign: "center" }}>
+      <Typography
+        variant="h4"
+        component="h1"
+        sx={{ marginBottom: "2rem", color: "#fff" }}
+      >
+        Client Reviews
+      </Typography>
 
       {review && (
-        <div className={styles.info}>
-          {review.img && <Image src={review.img} alt="image" />}
-          <div className={styles.review}>
-            <p>&quot; {review.desc} &quot;</p>
-          </div>
-          <h4>- {review.name}</h4>
-        </div>
+        <Card
+          sx={{
+            marginBottom: "2rem",
+            maxWidth: 600,
+            margin: "0 auto",
+            backgroundColor: "#333",
+          }}
+        >
+          <CardContent>
+            {review.img && (
+              <Image src={review.img} alt="image" width={200} height={200} />
+            )}
+            <Typography
+              variant="body1"
+              sx={{ fontStyle: "italic", marginBottom: "1rem", color: "#fff" }}
+            >
+              &quot; {review.desc} &quot;
+            </Typography>
+            <Typography variant="h6" sx={{ color: "#fff" }}>
+              - {review.name}
+            </Typography>
+          </CardContent>
+        </Card>
       )}
 
-      <div className={styles.arrowContainer}>
+      <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
         <motion.div
-          className={styles.arrows}
           onClick={() => handleClick(currentIndex - 1)}
           whileHover={{ scale: 1.1 }}
         >
-          <h1>←</h1>
+          <IconButton>
+            <ChevronLeft sx={{ color: "#fff" }} />
+          </IconButton>
         </motion.div>
 
         <motion.div
-          className={styles.arrows}
           onClick={() => handleClick(currentIndex + 1)}
           whileHover={{ scale: 1.1 }}
         >
-          <h1>→</h1>
+          <IconButton>
+            <ChevronRight sx={{ color: "#fff" }} />
+          </IconButton>
         </motion.div>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 };
 

@@ -1,87 +1,117 @@
 import { useState } from "react";
-import styles from "./Navbar.module.scss";
-import { motion } from "framer-motion";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
-import Image from "next/image";
-import Logo from "../../assets/logo.png";
+import {
+  AppBar,
+  Toolbar,
+  IconButton,
+  Menu,
+  MenuItem,
+  Button,
+  Box,
+  useTheme,
+  useMediaQuery,
+  Typography,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
-  const [isOpen, SetIsOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
-  const toggleMenu = () => {
-    SetIsOpen((open) => !open);
+  const toggleMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const closeMenu = () => {
+    setAnchorEl(null);
   };
 
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
 
+  const navLinks = [
+    { label: "About", to: "about", offset: -25 },
+    { label: "Training", to: "skills", offset: -25 },
+    { label: "Reviews", to: "reviews" },
+    { label: "Contact", to: "contact" },
+  ];
+
   return (
-    <nav className="nav-header">
-      <ul className="nav-header__container">
-        <Image
-          src={Logo}
-          alt="logo"
-          width={50}
-          height={50}
-          className="nav-logo"
-        />
-        <li
-          onClick={scrollToTop}
-          style={{ listStyle: "none" }}
-          className="nav-title"
-        >
-          Fullplate Fitness
-        </li>
-        <li className="nav-header__trigger" onClick={toggleMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </li>
-        <li
-          className={`nav-header_menuItems ${isOpen ? "is-open" : ""}`}
-          style={{ listStyle: "none" }}
-        >
-          <ul className="nav-list">
-            <li style={{ listStyle: "none" }} className="nav-list_container">
+    <AppBar position="sticky" sx={{ backgroundColor: "#333" }}>
+      <Toolbar
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        {/* Logo / Title */}
+        <Button color="inherit" onClick={scrollToTop}>
+          <Typography
+            variant="h6"
+            fontWeight="bold"
+            sx={{ fontSize: { xs: "0.8rem", sm: "1.25rem", md: "1.5rem" } }}
+          >
+            Fullplate Fitness
+          </Typography>
+        </Button>
+
+        {isMobile ? (
+          <>
+            <IconButton
+              color="inherit"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={toggleMenu}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorEl}
+              open={Boolean(anchorEl)}
+              onClose={closeMenu}
+              anchorOrigin={{ vertical: "top", horizontal: "right" }}
+              transformOrigin={{ vertical: "top", horizontal: "right" }}
+            >
+              {navLinks.map(({ label, to, offset = 0 }) => (
+                <MenuItem key={to} onClick={closeMenu}>
+                  <ScrollLink
+                    to={to}
+                    smooth={true}
+                    duration={500}
+                    offset={offset}
+                  >
+                    {label}
+                  </ScrollLink>
+                </MenuItem>
+              ))}
+            </Menu>
+          </>
+        ) : (
+          <Box sx={{ display: "flex", gap: 3 }}>
+            {navLinks.map(({ label, to, offset = 0 }) => (
               <ScrollLink
-                to="about"
+                key={to}
+                to={to}
                 smooth={true}
                 duration={500}
-                offset={150}
-                onClick={toggleMenu}
+                offset={offset}
+                style={{
+                  color: "white",
+                  textDecoration: "none",
+                  cursor: "pointer",
+                }}
               >
-                About
+                <Typography variant="button">{label}</Typography>
               </ScrollLink>
-              <ScrollLink
-                to="skills"
-                smooth={true}
-                duration={500}
-                onClick={toggleMenu}
-              >
-                Training
-              </ScrollLink>
-              <ScrollLink
-                to="reviews"
-                smooth={true}
-                duration={500}
-                onClick={toggleMenu}
-              >
-                Reviews
-              </ScrollLink>
-              <ScrollLink
-                to="contact"
-                smooth={true}
-                duration={500}
-                onClick={toggleMenu}
-              >
-                Contact
-              </ScrollLink>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+            ))}
+          </Box>
+        )}
+      </Toolbar>
+    </AppBar>
   );
 };
 
